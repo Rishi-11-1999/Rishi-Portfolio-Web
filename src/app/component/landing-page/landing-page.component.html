@@ -1,0 +1,292 @@
+<nav>
+  <div class="wrap">
+    <div class="brand">Rishi<span>Kumar</span></div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span>Open to new opportunities</div>
+        <h1>Full stack developer building on <span class="accent">Angular</span> &amp; <span class="accent2">Node.js</span></h1>
+        <p class="lead">3 years shipping features on a live production system, building a learning platform from
+          scratch, and wiring up AI features with the OpenAI API — deployed and maintained end to end, server
+          included.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="/resume.pdf">Download Résumé</a>
+        </div>
+      </div>
+
+      <div>
+        <!-- Signature element: a real deploy, the way Rishi actually ships code -->
+        <div class="deploy-console" aria-hidden="true">
+          <div class="console-bar">
+            <span class="console-dot red"></span><span class="console-dot yellow"></span><span
+              class="console-dot green"></span>
+            <span class="console-title mono">putty — rishi@prod-server</span>
+          </div>
+          <div class="console-body mono">
+            <div class="console-line" style="animation-delay:.2s"><span class="prompt">rishi@local:~$</span> winscp
+              sync ./dist rishi@prod:/var/www/app</div>
+            <div class="console-line ok" style="animation-delay:1.2s">✓ 214 files transferred over SFTP</div>
+            <div class="console-line" style="animation-delay:2.2s"><span class="prompt">rishi@local:~$</span> ssh
+              rishi@prod-server 'pm2 restart app'</div>
+            <div class="console-line ok" style="animation-delay:3.2s">✓ app restarted — live in production</div>
+            <div class="console-line" style="animation-delay:4.1s"><span class="prompt">rishi@local:~$</span> <span
+                class="console-cursor" style="animation-delay:4.1s">_</span></div>
+          </div>
+        </div>
+        <div class="status-strip">
+          <span>3 yrs in prod</span>
+          <span class="bar"></span>
+          <span>zero downtime deploys</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="reveal">
+  <div class="wrap">
+    <div class="section-head"><span class="idx">01</span>
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>I'm a full stack developer with 3 years of experience across Angular, Node.js, and MSSQL. My work has
+          ranged from maintaining and extending a travel booking platform that's been live in production for over a
+          decade, to building a Learning Management System from the ground up.</p>
+        <p>I'm comfortable working inside existing, evolving codebases as much as greenfield builds — reading legacy
+          code, fixing production bugs, and shipping new features without breaking what's already working for real
+          users. I also handle my own deployments on Linux servers using PuTTY and WinSCP, so I'm used to owning a
+          feature from local branch to live server.</p>
+        <p>More recently, I've been integrating the OpenAI API into Node.js backends to add AI-driven features, and
+          building a working knowledge of web security fundamentals using Burp Suite, alongside deploying frontend
+          projects on Vercel.</p>
+      </div>
+      <div>
+        <div class="info-panel">
+          <div class="cmd">rishi@career:~$ whoami</div>
+          <div class="out">Full Stack Developer — Angular &amp; Node.js</div>
+          <div class="cmd">rishi@career:~$ uptime</div>
+          <div class="out"><b>3 years</b> in production systems</div>
+          <div class="cmd">rishi@career:~$ cat stack.json</div>
+          <div class="skill-json">{{ '{' }}</div>
+          <div class="skill-json">&nbsp;&nbsp;<span class="key">"frontend"</span>: [<span class="val">"Angular"</span>,
+            <span class="val">"TypeScript"</span>],</div>
+          <div class="skill-json">&nbsp;&nbsp;<span class="key">"backend"</span>: [<span class="val">"Node.js"</span>,
+            <span class="val">"Express"</span>],</div>
+          <div class="skill-json">&nbsp;&nbsp;<span class="key">"database"</span>: [<span class="val">"MSSQL"</span>],
+          </div>
+          <div class="skill-json">&nbsp;&nbsp;<span class="key">"devops"</span>: [<span class="val">"Linux"</span>,
+            <span class="val">"WinSCP"</span>, <span class="val">"PuTTY"</span>, <span class="val">"Vercel"</span>],
+          </div>
+          <div class="skill-json">&nbsp;&nbsp;<span class="key">"ai"</span>: [<span class="val">"OpenAI API"</span>],
+          </div>
+          <div class="skill-json">&nbsp;&nbsp;<span class="key">"security"</span>: [<span class="val">"Burp Suite
+              (basics)"</span>]</div>
+          <div class="skill-json">{{ '}' }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="reveal">
+  <div class="wrap">
+    <div class="section-head"><span class="idx">02</span>
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="when">2.5 years</div>
+        <h3>Software Developer — Travel Booking Platform</h3>
+        <div class="role">Company name here</div>
+        <ul>
+          <li>Maintained and extended a live production travel booking platform running for 10+ years, without
+            disrupting real users</li>
+          <li>Built and shipped new features end to end using Angular on the frontend and Node.js on the backend</li>
+          <li>Deployed and monitored releases directly on Linux servers using PuTTY and WinSCP</li>
+          <li>Diagnosed and fixed production bugs on an established, evolving codebase</li>
+          <li class="note mono">// Swap this in: 1–2 specific features you built or a bug you're proud of fixing</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="when">5 months</div>
+        <h3>Software Developer — Learning Management System</h3>
+        <div class="role">Company name here</div>
+        <ul>
+          <li>Built core modules of an LMS from the ground up using Angular and Node.js</li>
+          <li>Worked across the stack on features such as course management, user roles, and content delivery</li>
+          <li class="note mono">// Swap this in: the module you owned end to end</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <div class="wrap">
+    <div class="section-head"><span class="idx">03</span>
+      <h2>Projects</h2>
+    </div>
+    <div class="projects">
+
+      <div class="project-card">
+        <div class="project-top">
+          <h3>Travel Booking Platform</h3>
+          <span class="tag">Work Project</span>
+        </div>
+        <p class="desc">A live travel/stay booking product that's been in production for over a decade. Add 1–2
+          specific features you built or bugs you fixed here — this is your strongest talking point, make it
+          concrete.</p>
+        <div class="chip-row">
+          <span class="chip">Angular</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">MSSQL</span>
+          <span class="chip">Production System</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live Site →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <h3>Learning Management System</h3>
+          <span class="tag personal">Work Project</span>
+        </div>
+        <p class="desc">A platform for managing courses, content, and users with role-based access — built as part of
+          my first role. Add 1–2 sentences on what it does and your specific contribution.</p>
+        <div class="chip-row">
+          <span class="chip">Angular</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+        </div>
+        <div class="project-links">
+          <a href="#">GitHub →</a>
+          <a href="#">Live Demo →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <h3>AI-Assisted Feature — OpenAI API Integration</h3>
+          <span class="tag">Personal Project</span>
+        </div>
+        <p class="desc">A Node.js backend wired up to the OpenAI API to add an AI-driven feature — add a one-line
+          description of exactly what it does (e.g. "generates summaries from user input" or "answers questions over
+          a document set"), plus what problem it solves.</p>
+        <div class="chip-row">
+          <span class="chip">Node.js</span>
+          <span class="chip">OpenAI API</span>
+          <span class="chip">REST</span>
+        </div>
+        <div class="project-links">
+          <a href="#">GitHub →</a>
+          <a href="#">Live Demo →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <div class="wrap">
+    <div class="section-head"><span class="idx">04</span>
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <span class="k">Frontend</span>
+        <div class="chip-row">
+          <span class="chip">Angular</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">RxJS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="k">Backend</span>
+        <div class="chip-row">
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="k">Database</span>
+        <div class="chip-row">
+          <span class="chip">MSSQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="k">Deployment &amp; Linux</span>
+        <div class="chip-row">
+          <span class="chip">Linux</span>
+          <span class="chip">WinSCP</span>
+          <span class="chip">PuTTY</span>
+          <span class="chip">Vercel</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="k">AI Integration</span>
+        <div class="chip-row">
+          <span class="chip">OpenAI API</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="k">Web Security</span>
+        <div class="chip-row">
+          <span class="chip">Burp Suite (basics)</span>
+          <span class="chip">Web fundamentals</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <div class="wrap">
+    <div class="section-head"><span class="idx">05</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="k">EMAIL</div>
+        <div class="v">your.email@example.com</div>
+      </div>
+      <div class="contact-item">
+        <div class="k">LINKEDIN</div>
+        <div class="v">linkedin.com/in/yourname</div>
+      </div>
+      <div class="contact-item">
+        <div class="k">GITHUB</div>
+        <div class="v">github.com/yourname</div>
+      </div>
+      <div class="contact-item">
+        <div class="k">PHONE</div>
+        <div class="v">+91 XXXXX XXXXX</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap mono">Built with care — last updated 2026</div>
+</footer>
