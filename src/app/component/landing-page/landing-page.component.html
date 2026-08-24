@@ -1,6 +1,6 @@
 <nav>
   <div class="wrap">
-    <div class="brand">Rishi<span>Kumar</span></div>
+    <div class="brand"><span class="brand-badge">RK</span>Rishi Kumar</div>
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle" />
     <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
@@ -21,40 +21,58 @@
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow"><span class="dot"></span>Open to new opportunities</div>
-        <h1>Full stack developer building on <span class="accent">Angular</span> &amp; <span class="accent2">Node.js</span></h1>
-        <p class="lead">3 years shipping features on a live production system, building a learning platform from
+        <div class="tag-stamp"><span class="led"></span>Open to new opportunities</div>
+        <div class="kicker load-in" style="animation-delay:.1s">Full-Stack Developer</div>
+        <h1 class="load-in" style="animation-delay:.2s">Rishi <span class="accent">Kumar</span></h1>
+        <div class="type-line load-in mono" style="animation-delay:.32s"><span>{{ typewriterText }}</span><span class="type-cursor"></span></div>
+        <p class="lead load-in" style="animation-delay:.44s">3 years shipping features on a live production system, building a learning platform from
           scratch, and wiring up AI features with the OpenAI API — deployed and maintained end to end, server
           included.</p>
-        <div class="hero-actions">
+        <div class="hero-actions load-in" style="animation-delay:.56s">
           <a class="btn btn-primary" href="#projects">View Projects</a>
           <a class="btn btn-ghost" href="/resume.pdf">Download Résumé</a>
         </div>
+        <div class="hero-social load-in" style="animation-delay:.66s">
+          <span class="lbl mono">Find me on</span>
+          <a class="social-icon" href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          </a>
+          <a class="social-icon" href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6.5 8.5v10M6.5 5.5v.01M11.5 18.5v-5.5c0-2 1.2-3.3 3-3.3s2.9 1.3 2.9 3.3v5.5M11.5 10.2v8.3"/></svg>
+          </a>
+          <a class="social-icon" href="#" aria-label="Portfolio code">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg>
+          </a>
+        </div>
       </div>
 
-      <div>
-        <!-- Signature element: a real deploy, the way Rishi actually ships code -->
-        <div class="deploy-console" aria-hidden="true">
-          <div class="console-bar">
-            <span class="console-dot red"></span><span class="console-dot yellow"></span><span
-              class="console-dot green"></span>
-            <span class="console-title mono">putty — rishi@prod-server</span>
+      <div class="load-in" style="animation-delay:.28s">
+        <!-- Signature element: a spec-sheet nameplate, riveted and stamped "in service" -->
+        <div class="nameplate" aria-hidden="true">
+          <span class="rivet bl"></span><span class="rivet br"></span>
+          <div class="nameplate-head">
+            <span class="np-title">Spec Sheet</span>
+            <span class="np-status"><span class="led"></span>In Service</span>
           </div>
-          <div class="console-body mono">
-            <div class="console-line" style="animation-delay:.2s"><span class="prompt">rishi@local:~$</span> winscp
-              sync ./dist rishi@prod:/var/www/app</div>
-            <div class="console-line ok" style="animation-delay:1.2s">✓ 214 files transferred over SFTP</div>
-            <div class="console-line" style="animation-delay:2.2s"><span class="prompt">rishi@local:~$</span> ssh
-              rishi@prod-server 'pm2 restart app'</div>
-            <div class="console-line ok" style="animation-delay:3.2s">✓ app restarted — live in production</div>
-            <div class="console-line" style="animation-delay:4.1s"><span class="prompt">rishi@local:~$</span> <span
-                class="console-cursor" style="animation-delay:4.1s">_</span></div>
+          <div class="np-row"><span class="k">Role</span><span class="v">Full Stack Developer</span></div>
+          <div class="np-row"><span class="k">Experience</span><span class="v">3 years</span></div>
+          <div class="np-row"><span class="k">Core stack</span><span class="v">Angular · Node.js · MSSQL</span></div>
+          <div class="np-bar-wrap">
+            <span class="k">Also working with</span>
+            <div class="chip-row">
+              <span class="chip">Express</span>
+              <span class="chip">OpenAI API</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Vercel</span>
+              <span class="chip">WordPress</span>
+              <span class="chip">Burp Suite</span>
+            </div>
           </div>
-        </div>
-        <div class="status-strip">
-          <span>3 yrs in prod</span>
-          <span class="bar"></span>
-          <span>zero downtime deploys</span>
+          <div class="np-bar-wrap">
+            <span class="k">Uptime track record</span>
+            <div class="np-bar"></div>
+            <div class="np-bar-label"><span>3 yrs in prod</span><span>zero downtime deploys</span></div>
+          </div>
         </div>
       </div>
     </div>
@@ -63,8 +81,9 @@
 
 <section id="about" class="reveal">
   <div class="wrap">
-    <div class="section-head"><span class="idx">01</span>
+    <div class="section-head"><span class="ticket-no mono">01</span>
       <h2>About</h2>
+      <span class="rule"></span>
     </div>
     <div class="about-grid">
       <div>
@@ -75,32 +94,35 @@
           code, fixing production bugs, and shipping new features without breaking what's already working for real
           users. I also handle my own deployments on Linux servers using PuTTY and WinSCP, so I'm used to owning a
           feature from local branch to live server.</p>
-        <p>More recently, I've been integrating the OpenAI API into Node.js backends to add AI-driven features, and
-          building a working knowledge of web security fundamentals using Burp Suite, alongside deploying frontend
-          projects on Vercel.</p>
+        <p>More recently, I've been integrating the OpenAI API into Node.js backends to add AI-driven features,
+          building a working knowledge of web security fundamentals using Burp Suite, deploying frontend projects on
+          Vercel, and building on WordPress + Hostinger for a personal business site.</p>
       </div>
-      <div>
-        <div class="info-panel">
-          <div class="cmd">rishi@career:~$ whoami</div>
-          <div class="out">Full Stack Developer — Angular &amp; Node.js</div>
-          <div class="cmd">rishi@career:~$ uptime</div>
-          <div class="out"><b>3 years</b> in production systems</div>
-          <div class="cmd">rishi@career:~$ cat stack.json</div>
-          <div class="skill-json">{{ '{' }}</div>
-          <div class="skill-json">&nbsp;&nbsp;<span class="key">"frontend"</span>: [<span class="val">"Angular"</span>,
-            <span class="val">"TypeScript"</span>],</div>
-          <div class="skill-json">&nbsp;&nbsp;<span class="key">"backend"</span>: [<span class="val">"Node.js"</span>,
-            <span class="val">"Express"</span>],</div>
-          <div class="skill-json">&nbsp;&nbsp;<span class="key">"database"</span>: [<span class="val">"MSSQL"</span>],
+      <div class="index-card info-panel">
+        <span class="punch"></span>
+        <span class="corner-tag">Record</span>
+        <div class="row">
+          <span class="k">Role</span>
+          <span class="v">Full Stack Developer</span>
+        </div>
+        <div class="row">
+          <span class="k">Experience</span>
+          <span class="v">3 years</span>
+        </div>
+        <div class="row">
+          <span class="k">Core stack</span>
+          <span class="v">Angular · Node.js · MSSQL</span>
+        </div>
+        <div class="stack-row">
+          <span class="k">Also working with</span>
+          <div class="chip-row">
+            <span class="chip">Express</span>
+            <span class="chip">OpenAI API</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Vercel</span>
+            <span class="chip">WordPress</span>
+            <span class="chip">Burp Suite</span>
           </div>
-          <div class="skill-json">&nbsp;&nbsp;<span class="key">"devops"</span>: [<span class="val">"Linux"</span>,
-            <span class="val">"WinSCP"</span>, <span class="val">"PuTTY"</span>, <span class="val">"Vercel"</span>],
-          </div>
-          <div class="skill-json">&nbsp;&nbsp;<span class="key">"ai"</span>: [<span class="val">"OpenAI API"</span>],
-          </div>
-          <div class="skill-json">&nbsp;&nbsp;<span class="key">"security"</span>: [<span class="val">"Burp Suite
-              (basics)"</span>]</div>
-          <div class="skill-json">{{ '}' }}</div>
         </div>
       </div>
     </div>
@@ -109,13 +131,16 @@
 
 <section id="experience" class="reveal">
   <div class="wrap">
-    <div class="section-head"><span class="idx">02</span>
+    <div class="section-head"><span class="ticket-no mono">02</span>
       <h2>Experience</h2>
+      <span class="rule"></span>
     </div>
     <div class="timeline">
-      <div class="tl-item">
-        <div class="when">2.5 years</div>
-        <h3>Software Developer — Travel Booking Platform</h3>
+      <div class="wo-ticket">
+        <div class="wo-head">
+          <h3>Software Developer — Travel Booking Platform</h3>
+          <span class="when mono">2.5 years</span>
+        </div>
         <div class="role">Company name here</div>
         <ul>
           <li>Maintained and extended a live production travel booking platform running for 10+ years, without
@@ -123,17 +148,19 @@
           <li>Built and shipped new features end to end using Angular on the frontend and Node.js on the backend</li>
           <li>Deployed and monitored releases directly on Linux servers using PuTTY and WinSCP</li>
           <li>Diagnosed and fixed production bugs on an established, evolving codebase</li>
-          <li class="note mono">// Swap this in: 1–2 specific features you built or a bug you're proud of fixing</li>
+          <li class="note mono">Swap this in: 1–2 specific features you built or a bug you're proud of fixing</li>
         </ul>
       </div>
-      <div class="tl-item">
-        <div class="when">5 months</div>
-        <h3>Software Developer — Learning Management System</h3>
+      <div class="wo-ticket">
+        <div class="wo-head">
+          <h3>Software Developer — Learning Management System</h3>
+          <span class="when mono">5 months</span>
+        </div>
         <div class="role">Company name here</div>
         <ul>
           <li>Built core modules of an LMS from the ground up using Angular and Node.js</li>
           <li>Worked across the stack on features such as course management, user roles, and content delivery</li>
-          <li class="note mono">// Swap this in: the module you owned end to end</li>
+          <li class="note mono">Swap this in: the module you owned end to end</li>
         </ul>
       </div>
     </div>
@@ -142,15 +169,17 @@
 
 <section id="projects" class="reveal">
   <div class="wrap">
-    <div class="section-head"><span class="idx">03</span>
+    <div class="section-head"><span class="ticket-no mono">03</span>
       <h2>Projects</h2>
+      <span class="rule"></span>
     </div>
     <div class="projects">
 
       <div class="project-card">
+        <span class="punch"></span>
         <div class="project-top">
           <h3>Travel Booking Platform</h3>
-          <span class="tag">Work Project</span>
+          <span class="tag mono">Work Project</span>
         </div>
         <p class="desc">A live travel/stay booking product that's been in production for over a decade. Add 1–2
           specific features you built or bugs you fixed here — this is your strongest talking point, make it
@@ -162,14 +191,16 @@
           <span class="chip">Production System</span>
         </div>
         <div class="project-links">
+          <button class="details-btn" (click)="openModal('travel')">System Details →</button>
           <a href="#">Live Site →</a>
         </div>
       </div>
 
       <div class="project-card">
+        <span class="punch"></span>
         <div class="project-top">
           <h3>Learning Management System</h3>
-          <span class="tag personal">Work Project</span>
+          <span class="tag personal mono">Work Project</span>
         </div>
         <p class="desc">A platform for managing courses, content, and users with role-based access — built as part of
           my first role. Add 1–2 sentences on what it does and your specific contribution.</p>
@@ -179,15 +210,17 @@
           <span class="chip">Express</span>
         </div>
         <div class="project-links">
+          <button class="details-btn" (click)="openModal('lms')">System Details →</button>
           <a href="#">GitHub →</a>
           <a href="#">Live Demo →</a>
         </div>
       </div>
 
       <div class="project-card">
+        <span class="punch"></span>
         <div class="project-top">
           <h3>AI-Assisted Feature — OpenAI API Integration</h3>
-          <span class="tag">Personal Project</span>
+          <span class="tag mono">Personal Project</span>
         </div>
         <p class="desc">A Node.js backend wired up to the OpenAI API to add an AI-driven feature — add a one-line
           description of exactly what it does (e.g. "generates summaries from user input" or "answers questions over
@@ -198,45 +231,100 @@
           <span class="chip">REST</span>
         </div>
         <div class="project-links">
+          <button class="details-btn" (click)="openModal('ai')">System Details →</button>
           <a href="#">GitHub →</a>
           <a href="#">Live Demo →</a>
         </div>
       </div>
 
+      <div class="project-card">
+        <span class="punch"></span>
+        <div class="project-top">
+          <h3>Pinterest Business Site</h3>
+          <span class="tag personal mono">Personal Project</span>
+        </div>
+        <p class="desc">A WordPress site on Hostinger built to run a personal Pinterest-driven business — add what
+          the business sells, and what you set up yourself (theme, plugins, domain/hosting, SEO basics).</p>
+        <div class="chip-row">
+          <span class="chip">WordPress</span>
+          <span class="chip">Hostinger</span>
+          <span class="chip">SEO Basics</span>
+        </div>
+        <div class="project-links">
+          <button class="details-btn" (click)="openModal('wp')">System Details →</button>
+          <a href="#">Visit Site →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Reusable modal, data-driven from projectData in the component -->
+    <div class="modal-overlay" [class.open]="activeProject" (click)="onOverlayClick($event)">
+      <div class="modal" role="dialog" aria-modal="true" *ngIf="activeProject">
+        <button class="modal-close" (click)="closeModal()" aria-label="Close">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <span class="tag mono">{{ activeProject.tag }}</span>
+        <h3>{{ activeProject.title }}</h3>
+        <div class="m-label">Key Contributions &amp; Achievements</div>
+        <ul class="contribution-list">
+          <li *ngFor="let c of activeProject.contributions">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+            <span>{{ c }}</span>
+          </li>
+        </ul>
+        <div class="m-label">System Features</div>
+        <div class="feature-grid">
+          <div class="feat" *ngFor="let f of activeProject.features">{{ f }}</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="skills" class="reveal">
   <div class="wrap">
-    <div class="section-head"><span class="idx">04</span>
+    <div class="section-head"><span class="ticket-no mono">04</span>
       <h2>Skills</h2>
+      <span class="rule"></span>
     </div>
     <div class="skills-grid">
-      <div class="skill-group">
-        <span class="k">Frontend</span>
+      <div class="bin">
+        <div class="bin-head">
+          <span class="bin-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg></span>
+          <span class="k">Frontend</span>
+        </div>
         <div class="chip-row">
           <span class="chip">Angular</span>
           <span class="chip">TypeScript</span>
           <span class="chip">RxJS</span>
         </div>
       </div>
-      <div class="skill-group">
-        <span class="k">Backend</span>
+      <div class="bin">
+        <div class="bin-head">
+          <span class="bin-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r=".6" fill="currentColor" stroke="none"/><circle cx="7" cy="17" r=".6" fill="currentColor" stroke="none"/></svg></span>
+          <span class="k">Backend</span>
+        </div>
         <div class="chip-row">
           <span class="chip">Node.js</span>
           <span class="chip">Express</span>
           <span class="chip">REST APIs</span>
         </div>
       </div>
-      <div class="skill-group">
-        <span class="k">Database</span>
+      <div class="bin">
+        <div class="bin-head">
+          <span class="bin-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+          <span class="k">Database</span>
+        </div>
         <div class="chip-row">
           <span class="chip">MSSQL</span>
         </div>
       </div>
-      <div class="skill-group">
-        <span class="k">Deployment &amp; Linux</span>
+      <div class="bin">
+        <div class="bin-head">
+          <span class="bin-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></span>
+          <span class="k">Deployment &amp; Linux</span>
+        </div>
         <div class="chip-row">
           <span class="chip">Linux</span>
           <span class="chip">WinSCP</span>
@@ -244,14 +332,30 @@
           <span class="chip">Vercel</span>
         </div>
       </div>
-      <div class="skill-group">
-        <span class="k">AI Integration</span>
+      <div class="bin">
+        <div class="bin-head">
+          <span class="bin-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg></span>
+          <span class="k">AI Integration</span>
+        </div>
         <div class="chip-row">
           <span class="chip">OpenAI API</span>
         </div>
       </div>
-      <div class="skill-group">
-        <span class="k">Web Security</span>
+      <div class="bin">
+        <div class="bin-head">
+          <span class="bin-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a13 13 0 0 1 0 18 13 13 0 0 1 0-18z"/></svg></span>
+          <span class="k">CMS &amp; Hosting</span>
+        </div>
+        <div class="chip-row">
+          <span class="chip">WordPress</span>
+          <span class="chip">Hostinger</span>
+        </div>
+      </div>
+      <div class="bin">
+        <div class="bin-head">
+          <span class="bin-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></span>
+          <span class="k">Web Security</span>
+        </div>
         <div class="chip-row">
           <span class="chip">Burp Suite (basics)</span>
           <span class="chip">Web fundamentals</span>
@@ -263,24 +367,25 @@
 
 <section id="contact" class="reveal">
   <div class="wrap">
-    <div class="section-head"><span class="idx">05</span>
+    <div class="section-head"><span class="ticket-no mono">05</span>
       <h2>Contact</h2>
+      <span class="rule"></span>
     </div>
     <div class="contact-grid">
-      <div class="contact-item">
-        <div class="k">EMAIL</div>
+      <div class="ship-label">
+        <div class="k">Email</div>
         <div class="v">your.email@example.com</div>
       </div>
-      <div class="contact-item">
-        <div class="k">LINKEDIN</div>
+      <div class="ship-label">
+        <div class="k">LinkedIn</div>
         <div class="v">linkedin.com/in/yourname</div>
       </div>
-      <div class="contact-item">
-        <div class="k">GITHUB</div>
+      <div class="ship-label">
+        <div class="k">GitHub</div>
         <div class="v">github.com/yourname</div>
       </div>
-      <div class="contact-item">
-        <div class="k">PHONE</div>
+      <div class="ship-label">
+        <div class="k">Phone</div>
         <div class="v">+91 XXXXX XXXXX</div>
       </div>
     </div>
