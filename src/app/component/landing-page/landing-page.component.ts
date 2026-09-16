@@ -22,12 +22,13 @@ interface ProjectDetail {
 export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   // ---- Typewriter tagline ----------------------------------------------
   typewriterText = '';
-  private phrases = [
-    'Angular & Node.js',
-    'Full Stack Development',
-    'AI-Powered Features',
-    'WordPress & Hosting',
-  ];
+ private phrases = [
+  'Full Stack Developer',
+  'Angular & Node.js',
+  'RESTful API Integration',
+  'AI-Powered Automation',
+  'Payment Gateway Integration',
+];
   private phraseIndex = 0;
   private charIndex = 0;
   private deleting = false;
@@ -39,45 +40,42 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   projectData: Record<string, ProjectDetail> = {
     travel: {
       tag: 'Full-Stack / Production',
-      title: 'Travel Booking Platform',
+      title: 'StayBazar',
       contributions: [
-        'Extended and maintained a 10+ year live production booking system without disrupting real bookings or users.',
-        'Shipped end-to-end features across Angular (frontend) and Node.js (backend), from UI to API to schema change.',
-        'Diagnosed and resolved production bugs directly on Linux servers via PuTTY and WinSCP deploys.',
+        'Staybazar is a corporate travel and accommodation platform that helps companies manage their employees business travel requirements.',
+        'We provide services like hotel and serviced apartment bookings, along with travel ticketing such as flight and other transportation bookings.',
+        'In simple terms, Staybazar acts as a bridge between corporate companies and travel/accommodation partners.',
+        'Companies can raise travel or stay requirements, and it would go to the Designated managers of the employees and after their approval we would complete the booking, Staybazar helps manage the booking process from requirement to confirmation.',
+        'I was working as a Developer there, mainly handling the website and internal systems. My work included developing new features, fixing bugs, improving existing functionalities, automating manual processes, and building solutions based on business requirements.',
+        'Delivered client onboarding sessions, product demonstrations, and staff training programmes achieving high cross-department adoption.',
+        'Administered ServiceNow modules — Incident, Problem, Change, IT Asset Management, and Request Fulfillment.',
+        'Oversaw frontend development (HTML, CSS, JavaScript) and mentored junior design staff, ensuring UI/UX alignment with product goals.',
+        'Maintained backend systems, SQL databases, and IT infrastructure with 99%+ uptime and strict data integrity standards.',
+
       ],
       features: [
-        'Live search and booking flow across an established MSSQL schema.',
-        'Zero-downtime deploys pushed straight to the production server.',
-        'Bug fixes shipped against real user traffic on a decade-old codebase.',
-        'Feature work coordinated across frontend and backend in the same release.',
+        'Developed and shipped new features across frontend and backend for a live travel/stay booking platform.',
+        'Automated manual booking and approval processes, reducing turnaround time for corporate clients.',
+        'Administered ServiceNow modules — Incident, Problem, Change, IT Asset Management, and Request Fulfillment.',
+        'Maintained SQL databases and backend systems with 99%+ uptime and strict data integrity standards.',
+        'Oversaw frontend UI/UX work (HTML, CSS, JavaScript) and mentored junior design staff on the design team.',
       ],
     },
     lms: {
       tag: 'Full-Stack / Greenfield',
-      title: 'Learning Management System',
+      title: 'Vidan',
       contributions: [
-        'Built core LMS modules from the ground up using Angular and Node.js on a greenfield codebase.',
-        'Implemented course management, user roles, and content delivery across the stack.',
-        "Owned a specific module end to end — swap in the one you're proudest of.",
+        'Feature-rich Learning Management System designed for schools, institutes, and organizations to create, manage, and deliver online learning content across web and mobile platforms.',
+        'Developed frontend UI modules including course management, student dashboards, and reporting screens.',
+        "Built responsive, mobile-friendly layouts ensuring seamless cross-device experience.",
+        "Participated in continuous product enhancement cycles — adding new features, fixing bugs, and improving UX based on client feedback",
+        "Built and integrated backend APIs using Node.js and Express.js to support core application functionality."
       ],
       features: [
-        'Role-based access for students, instructors, and admins.',
-        'Course and content management built on Express + MSSQL.',
-        'Structured for future modules to plug in cleanly.',
-      ],
-    },
-    ai: {
-      tag: 'Personal / AI',
-      title: 'AI-Assisted Feature — OpenAI API',
-      contributions: [
-        'Wired a Node.js backend to the OpenAI API to add an AI-driven feature — describe exactly what it does.',
-        'Handled prompt construction, response parsing, and error handling around the API calls.',
-        'Exposed the feature through a clean REST endpoint for the frontend to consume.',
-      ],
-      features: [
-        'REST endpoint wrapping OpenAI API calls.',
-        'Structured prompt handling with error and rate-limit handling.',
-        'Response parsing tuned for the specific use case.',
+        'Frontend UI modules for course management, student dashboards, and reporting screens.',
+        'Responsive, mobile-friendly layouts for a seamless cross-device experience.',
+        'Backend APIs built with Node.js and Express.js powering core application functionality.',
+        'Continuous enhancement cycles — new features, bug fixes, and UX improvements based on client feedback.',
       ],
     },
     wp: {
@@ -99,7 +97,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   // ---- Scroll reveal ------------------------------------------------------
   private observer: IntersectionObserver | null = null;
 
-  constructor(private host: ElementRef<HTMLElement>) {}
+  constructor(private host: ElementRef<HTMLElement>) { }
 
   ngOnInit(): void {
     this.startTypewriter();
@@ -188,5 +186,11 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   @HostListener('document:keydown.escape')
   onEscape(): void {
     if (this.activeProject) this.closeModal();
+  }
+  downloadResume(): void {
+    const link = document.createElement('a');
+    link.href = 'assets/RishiKumar_Resume.pdf';
+    link.download = 'RishiKumar_Resume.pdf';
+    link.click();
   }
 }
